@@ -8,9 +8,9 @@ async function makeReq(){
   console.log(data);
   if (data.flip == "heads") {
     document.querySelector("#result").innerText = "Heads!"
-    document.querySelector("#coinPic").src = "/images/coinHead.png"
+    document.querySelector("#coinPic").src = "coinHead.png"
   } else {
     document.querySelector("#result").innerText = "Tails!"
-    document.querySelector("#coinPic").src = "/images/coinTails.png"
+    document.querySelector("#coinPic").src = "coinTails.png"
   }
 }

@@ -15,14 +15,18 @@ const server = http.createServer((req, res) => {
       res.end();
     });
   }
-  else if (page == '/images/coinHead.png') {
-    fs.readFile('/images/coinHead.png', function(err, data) {
+  else if (page == 'coinHead.png') {
+    console.log("testing")
+    fs.readFile('coinHead.png', function(err, data) {
+      if (err) {console.log(err)}
       res.writeHead(200, {'Content-Type': 'image/png'});
       res.end(data, 'utf8');
     });
   }
-  else if (page == '/images/coinTails.png') {
-    fs.readFile('/images/coinTails.png', function(err, data) {
+  else if (page == 'coinTails.png') {
+    console.log("testing")
+    fs.readFile('coinHead.png', function(err, data) {
+      if (err) {console.log(err)}
       res.writeHead(200, {'Content-Type': 'image/png'});
       res.end(data, 'utf8');
     });
