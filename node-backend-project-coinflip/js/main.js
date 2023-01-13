@@ -8,9 +8,13 @@ async function makeReq(){
   console.log(data);
   if (data.flip == "heads") {
     document.querySelector("#result").innerText = "Heads!"
-    document.querySelector("#coinPic").src = "coinHead.png"
+    document.querySelector('#coinResult').src = "/images/coinHead.png"
+    /*document.querySelector("#coinHeads").classList.remove("hidden")
+    document.querySelector("#coinTails").classList.add("hidden") */
   } else {
     document.querySelector("#result").innerText = "Tails!"
-    document.querySelector("#coinPic").src = "coinTails.png"
+    document.querySelector('#coinResult').src = "/images/coinTails.png"
+    /*document.querySelector("#coinTails").classList.remove("hidden")
+    document.querySelector("#coinHeads").classList.add("hidden") */
   }
 }
